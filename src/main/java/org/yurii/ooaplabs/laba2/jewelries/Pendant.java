@@ -1,11 +1,19 @@
 package org.yurii.ooaplabs.laba2.jewelries;
 
-public interface Pendant {
-    static String getTypeName() {
+public abstract class Pendant extends AbstarctJewelry {
+
+    public Pendant(double weight, double difficultyFactor) {
+        super(weight, difficultyFactor);
+    }
+
+    public Pendant(double weight) {
+        super(weight);
+    }
+
+    public String getTypeName() {
         return "Кулон";
     }
-    static int getCostOfProduction() {
+    public int getCostOfProduction() {
         return 1000;
     }
-    //Код оголошень інших методів
 }

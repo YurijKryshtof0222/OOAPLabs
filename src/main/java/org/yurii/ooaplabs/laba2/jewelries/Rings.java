@@ -1,12 +1,19 @@
 package org.yurii.ooaplabs.laba2.jewelries;
 
-public interface Rings {
-    static String getTypeName() {
+public abstract class Rings extends AbstarctJewelry {
+    public Rings(double weight, double difficultyFactor) {
+        super(weight, difficultyFactor);
+    }
+
+    public Rings(double weight) {
+        super(weight);
+    }
+
+    public String getTypeName() {
         return "Каблучки";
     }
-    static int getCostOfProduction() {
+    public int getCostOfProduction() {
         return 1250;
     }
 
-    //Код оголошень інших методів
 }

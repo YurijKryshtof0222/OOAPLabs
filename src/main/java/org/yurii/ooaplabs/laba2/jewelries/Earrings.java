@@ -1,11 +1,18 @@
 package org.yurii.ooaplabs.laba2.jewelries;
 
-public interface Earrings {
-    static String getTypeName() {
+public abstract class Earrings extends AbstarctJewelry {
+    public Earrings(double weight, double difficultyFactor) {
+        super(weight, difficultyFactor);
+    }
+
+    public Earrings(double weight) {
+        super(weight);
+    }
+
+    public String getTypeName() {
         return "Сережки";
     }
-    static int getCostOfProduction() {
+    public int getCostOfProduction() {
         return 600;
     }
-    //Код оголошень інших методів
 }
