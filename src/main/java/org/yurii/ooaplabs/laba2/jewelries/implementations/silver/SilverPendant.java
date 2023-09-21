@@ -1,10 +1,9 @@
 package org.yurii.ooaplabs.laba2.jewelries.implementations.silver;
 
 import org.yurii.ooaplabs.laba2.jewelries.Pendant;
-import org.yurii.ooaplabs.laba2.jewelries.SilverJewelry;
 import org.yurii.ooaplabs.laba2.util.MaterialType;
 
-public class SilverPendant extends Pendant implements SilverJewelry {
+public class SilverPendant extends Pendant {
     public SilverPendant(double weight, double difficultyFactor) {
         super(weight, difficultyFactor);
     }
@@ -13,12 +12,12 @@ public class SilverPendant extends Pendant implements SilverJewelry {
         super(weight);
     }
 
+    public SilverPendant() {
+        super(20);
+    }
+
     @Override
     public MaterialType getMaterial() {
         return MaterialType.SILVER;
-    }
-
-    public SilverPendant() {
-        super(20);
     }
 }

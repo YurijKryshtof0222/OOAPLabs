@@ -1,6 +1,6 @@
 package org.yurii.ooaplabs.laba2.jewelries;
 
-public abstract class Necklace extends AbstarctJewelry{
+public abstract class Necklace extends Jewelry {
     public Necklace(double weight, double difficultyFactor) {
         super(weight, difficultyFactor);
     }

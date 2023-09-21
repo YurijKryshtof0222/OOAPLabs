@@ -2,16 +2,16 @@ package org.yurii.ooaplabs.laba2.jewelries;
 
 import org.yurii.ooaplabs.laba2.util.MaterialType;
 
-public abstract class AbstarctJewelry {
+public abstract class Jewelry {
     private final double weight;
     private final double difficultyFactor;
 
-    public AbstarctJewelry(double weight, double difficultyFactor) {
+    public Jewelry(double weight, double difficultyFactor) {
         this.weight = weight;
         this.difficultyFactor = difficultyFactor;
     }
 
-    public AbstarctJewelry(double weight) {
+    public Jewelry(double weight) {
         this.weight = weight;
         this.difficultyFactor = 1.0;
     }

@@ -1,6 +1,6 @@
 package org.yurii.ooaplabs.laba2;
 
-import org.yurii.ooaplabs.laba2.jewelries.AbstarctJewelry;
+import org.yurii.ooaplabs.laba2.jewelries.Jewelry;
 import org.yurii.ooaplabs.laba2.jewelries.Earrings;
 import org.yurii.ooaplabs.laba2.jewelries.Rings;
 import org.yurii.ooaplabs.laba2.jewelryFactories.GoldJewelryFactory;
@@ -21,7 +21,7 @@ public class JewelryCatalog {
         Rings goldRing = goldFactory.createRing();
         Rings silverRings = silverFactory.createRing();
 
-        List<AbstarctJewelry> catalog = new ArrayList<>();
+        List<Jewelry> catalog = new ArrayList<>();
         catalog.add(goldEarrings);
         catalog.add(silverEarrings);
         catalog.add(goldRing);
@@ -30,9 +30,9 @@ public class JewelryCatalog {
         showCatalog(catalog);
     }
 
-    public static void showCatalog(List<AbstarctJewelry> catalog) {
+    public static void showCatalog(List<Jewelry> catalog) {
         int i = 1;
-        for (AbstarctJewelry item : catalog) {
+        for (Jewelry item : catalog) {
             System.out.println(Integer.toString(i++) + " " + item.getTypeName() + ", Матеріал: " + item.getMaterialName() + ", Ціна: " + item.getPrice());
         }
     }
