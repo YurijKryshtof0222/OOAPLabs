@@ -1,8 +1,6 @@
 package org.yurii.ooaplabs.laba3.product;
 
 import java.util.Date;
-import java.util.List;
-
 public abstract class Product {
     private final int price;
     protected Date dateOfSold;
