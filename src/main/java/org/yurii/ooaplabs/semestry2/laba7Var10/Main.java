@@ -1,4 +1,4 @@
-package org.yurii.ooaplabs.semestry2.laba7Var2;
+package org.yurii.ooaplabs.semestry2.laba7Var10;
 
 public class Main {
     public static void main(String[] args) {

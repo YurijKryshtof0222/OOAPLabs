@@ -1,4 +1,4 @@
-package org.yurii.ooaplabs.semestry2.laba7Var2;
+package org.yurii.ooaplabs.semestry2.laba7Var10;
 
 import java.util.ArrayList;
 import java.util.List;
