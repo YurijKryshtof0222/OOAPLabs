@@ -15,7 +15,7 @@ public class Main {
         String postfixExpression = ArithmeticExpressionContext.infixToPostfix(infixExpression);
         int result = context.evaluate();
 
-//        System.out.println("Постфіксний запис виразу: " + postfixExpression);
+        System.out.println("Постфіксний запис виразу: " + postfixExpression);
         System.out.println("Результат: " + result);
     }
 
